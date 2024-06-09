@@ -24,7 +24,7 @@ class Education(models.Model):
 
 class Skill(models.Model):
     work_flow = models.CharField(max_length=225, null=True, blank=True)
-
+    
     def __str__(self):
         return self.work_flow
     
@@ -36,7 +36,7 @@ class Interest(models.Model):
         return self.interests
     
 
-class Award_Certification(models.Model):
+class AwardCertification(models.Model):
     awards_certifications = models.CharField(max_length=225, null=True, blank=True)
 
     def __str__(self):
