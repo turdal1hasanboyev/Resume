@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Education, AwardCertification, Skill, Experience, Interest
+
+from apps.resume.models import Education, AwardCertification, Skill, Experience, Interest
 
 
 admin.site.register(Education)

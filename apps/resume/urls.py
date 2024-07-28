@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import index
+
+from apps.resume.views import index
 
 
 urlpatterns = [
