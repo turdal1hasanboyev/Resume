@@ -1,6 +1,6 @@
 from django.urls import path
 
-from apps.resume.views import index
+from resume.views import index
 
 
 urlpatterns = [
