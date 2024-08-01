@@ -9,6 +9,7 @@ def index(request):
     skill = Skill.objects.all().order_by('-id')
     experience = Experience.objects.all().order_by('-id')
     interest = Interest.objects.all().order_by('-id')
+    
     user = Account.objects.get(id=1)
 
     context = {
