@@ -4,20 +4,20 @@ from resume.models import Education, AwardCertification, Skill, Experience, Inte
 
 
 def index(request):
-    education = Education.objects.all().order_by('-id')
-    award_certification = AwardCertification.objects.all().order_by('-id')
-    skill = Skill.objects.all().order_by('-id')
-    experience = Experience.objects.all().order_by('-id')
-    interest = Interest.objects.all().order_by('-id')
+    education = Education.objects.all()
+    award_certification = AwardCertification.objects.all()
+    skill = Skill.objects.all()
+    experience = Experience.objects.all()
+    interest = Interest.objects.all()
     
     user = Account.objects.get(id=1)
 
     context = {
-        "education": education,
-        "award_certification": award_certification,
-        "skill": skill,
-        "experience": experience,
-        "interest": interest,
+        "education": education.order_by('-id'),
+        "award_certification": award_certification.order_by('-id'),
+        "skill": skill.order_by('-id'),
+        "experience": experience.order_by('-id'),
+        "interest": interest.order_by('-id'),
         "user": user
     }
 
