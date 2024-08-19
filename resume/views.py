@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from resume.models import Education, AwardCertification, Skill, Experience, Interest, Account
+from .models import Education, AwardCertification, Skill, Experience, Interest, Account
 
 
 def index(request):
